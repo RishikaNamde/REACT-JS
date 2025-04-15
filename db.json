@@ -1,13 +1,6 @@
 {
   "employee": [
     {
-      "id": "fd36",
-      "empno": "121",
-      "name": "RISHIKA NAMDEV",
-      "designation": "developer",
-      "salary": "65000"
-    },
-    {
       "id": "c642",
       "empno": "200",
       "name": "deepak",
@@ -15,11 +8,11 @@
       "salary": "67000"
     },
     {
-      "id": "e7f4",
-      "empno": "233",
-      "name": "rishu",
-      "designation": "enterpenur",
-      "salary": "100000"
+      "id": "bf87",
+      "empno": "121",
+      "name": "RISHIKA NAMDEV",
+      "designation": "engineer",
+      "salary": "67000"
     }
   ]
 }

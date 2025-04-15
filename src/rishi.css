@@ -12,8 +12,13 @@
     margin: 30px auto;       
     text-align: center;     
 }
-.DelIcon{
+.delIcon{
     font-size: 25px;
     color: red;
+    cursor: pointer;
+}
+.editIcon{
+    font-size: 25px;
+    color: green;
     cursor: pointer;
 }

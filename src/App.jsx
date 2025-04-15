@@ -1029,50 +1029,53 @@
 
 //........................................11/04/2025.......................
 
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Layout from "./Layout";
-// import Home from "./PAGE/Home";
-// import Insert from "./PAGE/Insert";
-// import Search from "./PAGE/Search";
-// import Display from "./PAGE/Display";
-// import Contact from "./PAGE/Contact";
-// import Update from "./PAGE/Update";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
+import Home from "./PAGE/Home";
+import Insert from "./PAGE/Insert";
+import Search from "./PAGE/Search";
+import Display from "./PAGE/Display";
+import Contact from "./PAGE/Contact";
+import Update from "./PAGE/Update";
+import MyEdit from "./PAGE/MyEdit";
 
-// const App = () => {
-//   return (
-//     <BrowserRouter>
-//       <Routes>
-//         <Route path="/" element={<Layout />}>
-//           <Route index element={<Home />} />
-//           <Route path="home" element={<Home />} />
-//           <Route path="insert" element={<Insert />} />
-//           <Route path="display" element={<Display />} />
-//           <Route path="contact" element={<Contact />} /> {/* Ensure this is correct */}
-//           <Route path="search" element={<Search />} />
-//           <Route path="update" element={<Update/>}/>
-//         </Route>
-//       </Routes>
-//     </BrowserRouter>
-//   );
-// };
-// export default App;
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
+          <Route path="insert" element={<Insert />} />
+          <Route path="display" element={<Display />} />
+          <Route path="contact" element={<Contact />} /> {/* Ensure this is correct */}
+          <Route path="search" element={<Search />} />
+          <Route path="update" element={<Update/>}/>
+          <Route path="/myedit/:id" element={<MyEdit />} />
+
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+};
+export default App;
 
 
 //.............................PROPS DRILL.............................nested 
-import Comp1 from "./comp1";
-import { useState,createContext } from "react";
-const myContext=createContext();
-const App=()=>{
-    const [user,setUser]=useState("Rishika");
-    return(
-        <>
-        <h1>welcome {user}</h1>
-       <button onClick={()=>{setUser("Reshu")}}>Click here</button>
-       <myContext.Provider value={{user,setUser}}>
-        <Comp1/>
-       </myContext.Provider>
-        </>
-    )
-}
-export default App;
-export {myContext}
+// import Comp1 from "./comp1";
+// import { useState,createContext } from "react";
+// const myContext=createContext();
+// const App=()=>{
+//     const [user,setUser]=useState("Rishika");
+//     return(
+//         <>
+//         <h1>welcome {user}</h1>
+//        <button onClick={()=>{setUser("Reshu")}}>Click here</button>
+//        <myContext.Provider value={{user,setUser}}>
+//         <Comp1/>
+//        </myContext.Provider>
+//         </>
+//     )
+// }
+// export default App;
+// export {myContext}
