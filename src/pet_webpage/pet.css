@@ -1,0 +1,138 @@
+
+.custom-navbar {
+    background-color: #ff5733 !important;
+  }
+  
+  .btn-outline-success {
+    background-color: yellow !important;
+    color: black !important;
+    border-color: yellow !important;
+  }
+  
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+  }
+  .pet-store {
+    font-family: cursive;
+    font-size: larger;
+    font-weight: bolder;
+  }
+  
+  .custom-cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .custom-card {
+    width: 18rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+ 
+  .custom-card:hover {
+    transform: scale(1.05);
+  }
+ 
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+ 
+  .custom-card {
+    width: 18rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+  .custom-card:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .custom-btn {
+    background-color: yellow !important;
+    color: black !important;
+    border: none !important;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  
+  .custom-btn:hover {
+    background-color: orange !important;
+    color: white !important;
+  }
+  #pet-carousel {
+    padding-top: 30px;
+    max-width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .custom-caption {
+    background: rgba(49, 49, 49, 0.6); 
+    padding: 15px;
+    border-radius: 10px;
+    
+  }
+  
+  .custom-caption h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffd700; 
+  }
+  
+  .custom-caption p {
+    font-size: 1.2rem;
+    color: white;
+    margin: 5px 0;
+  }
+ 
+  .custom-footer {
+    background-color: rgb(2, 91, 169);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    margin-top: 10px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+  }
+  
