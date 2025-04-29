@@ -5,6 +5,9 @@
 //   return(
 //     <p>welcome to react i am {name} my age is {age} my salary is {salary}</p>   //expression in jsx{}
 //   )
+
+// const { useReducer } = require("react");
+
  
 // }
 // export default App;
@@ -1029,36 +1032,36 @@
 
 //........................................11/04/2025.......................
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Layout";
-import Home from "./PAGE/Home";
-import Insert from "./PAGE/Insert";
-import Search from "./PAGE/Search";
-import Display from "./PAGE/Display";
-import Contact from "./PAGE/Contact";
-import Update from "./PAGE/Update";
-import MyEdit from "./PAGE/MyEdit";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Layout from "./Layout";
+// import Home from "./PAGE/Home";
+// import Insert from "./PAGE/Insert";
+// import Search from "./PAGE/Search";
+// import Display from "./PAGE/Display";
+// import Contact from "./PAGE/Contact";
+// import Update from "./PAGE/Update";
+// import MyEdit from "./PAGE/MyEdit";
 
-const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="home" element={<Home />} />
-          <Route path="insert" element={<Insert />} />
-          <Route path="display" element={<Display />} />
-          <Route path="contact" element={<Contact />} /> {/* Ensure this is correct */}
-          <Route path="search" element={<Search />} />
-          <Route path="update" element={<Update/>}/>
-          <Route path="/myedit/:id" element={<MyEdit />} />
+// const App = () => {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path="/" element={<Layout />}>
+//           <Route index element={<Home />} />
+//           <Route path="home" element={<Home />} />
+//           <Route path="insert" element={<Insert />} />
+//           <Route path="display" element={<Display />} />
+//           <Route path="contact" element={<Contact />} /> {/* Ensure this is correct */}
+//           <Route path="search" element={<Search />} />
+//           <Route path="update" element={<Update/>}/>
+//           <Route path="/myedit/:id" element={<MyEdit />} />
 
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
-};
-export default App;
+//         </Route>
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// };
+// export default App;
 
 
 //.............................PROPS DRILL.............................nested 
@@ -1073,9 +1076,259 @@ export default App;
 //        <button onClick={()=>{setUser("Reshu")}}>Click here</button>
 //        <myContext.Provider value={{user,setUser}}>
 //         <Comp1/>
+        
 //        </myContext.Provider>
 //         </>
 //     )
 // }
 // export default App;
 // export {myContext}
+
+
+
+//..................................................................................
+
+//  import Cybrom from "./Cybrom";
+//  const App=()=>{
+//     return(
+//     <>
+//     <h1>welcome</h1>
+//    <Cybrom>
+//        we learn mern stack
+//    </Cybrom>
+//    </>
+// )
+//  }
+//  export default App;
+
+//................................................................................
+// import Text from "./Text";
+// const App=()=>{
+//     return(
+//     <>
+//     <h1>Welcome</h1>
+//     <Text/>
+//     </>
+//     )
+// }
+// export default App;
+
+//==================================17-04-2025=======================================================
+// import AuthApp from "./AuthApp";
+// import UnAuthApp from "./UnAuthApp";
+// import { useContext } from "react";
+// import {myContext} from "./LoginContext";
+// const App=()=>{
+//     const {user}=useContext(myContext);
+//     return(
+//         <>
+// <h1>Login System</h1>
+// {user?.auth ? <AuthApp /> : <UnAuthApp />}
+// </>
+//     )
+// }
+// export default App;
+
+
+//==============================================================================================
+// import { useRef } from "react";
+// const App=()=>{
+//     const myRef = useRef("");
+//     const myDisplay=()=>{
+//         // myRef.current.style.border="3px solid red";
+//         // myRef.current.style.width="200px";
+//         // myRef.current.style.padding="30px";
+//         // myRef.current.style.borderRadius="30px";
+//         // myRef.current.style.backgroundColor="yellow";
+//         myRef.current.innerHTML="we learn useref hook in react js";
+
+//     }
+//     return(
+//         <>
+//         <h1 ref={myRef}>Welcome to Cybrom</h1>
+//         <button onClick={myDisplay}>Click here</button>
+//         {/* <div ref={myRef}>
+//             we are cybrom student
+//         </div> */}
+//         </>
+//     )
+// }
+// export default App;
+
+
+//========================================================================================
+
+// import { useEffect } from "react";
+// import { useState,useRef } from "react";
+// const App=()=>{
+//     const [name,setName]=useState("");
+//         const myref=useRef(0);
+//         useEffect(()=>{
+//             myref.current+=1;
+//         })
+//         return(
+//             <>
+//             Enter Name: <input type="text" value={name} onChange={(e)=>{setName(e.target.value)}} />
+//             <h1>Rendring Count: {myref.current}</h1>
+//             </>
+
+//         )   
+// }
+// export default App;
+
+//========================================================================
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\task\\\\\\\\\\\\\\\\\\\\\\\
+// import { useRef } from "react";
+// const App=()=>{
+//       const myRef=useRef();
+// const myDisplay=()=>{
+//     myRef.current.style.backgroundColor="yellow";
+//     myRef.current.style.width="300px";
+//     myRef.current.style.padding="30px";
+//     myRef.current.style.borderRadius="20px";
+    
+    
+    
+// }
+// const myDispla=()=>{
+//     myRef.current.innerHTML="welcome to cybrom ";
+//     myRef.current.style.backgroundColor="yellow";
+//     myRef.current.style.width="300px";
+//     myRef.current.style.padding="30px";
+    
+// }
+
+// const myDispl=()=>{
+//     myRef.current.style.border="3px solid red";
+//     myRef.current.style.backgroundColor="yellow";
+//     myRef.current.style.width="300px";
+//     myRef.current.style.padding="30px";
+//     myRef.current.style.borderRadius="50px";
+    
+// }
+//         return(
+//             <>
+//             <div  ref={myRef}>
+//             {/* <h1 >welcome!!!</h1> */}
+//             </div>
+//         <button onClick={myDisplay}>first</button>
+//         <button onClick={myDispla}>second</button>
+//         <button onClick={myDispl}>third</button>
+       
+//             </>
+//         )
+//     }
+//     export default App;
+
+//======================================  22/04/2025   ========================================================
+//========================================USER-REDUCDER-HOOK=======================
+// import { useReducer } from "react";
+
+// const reducerMethod = (state, action) => {
+//   switch (action) {
+//     case "Increment":
+//       return state + 1;
+//     case "Decrement":
+//       return state - 1;
+//     default:
+//       return state;
+//   }
+// };
+
+// const App = () => {
+//   const [count, dispatch] = useReducer(reducerMethod, 0);
+
+//   return (
+//     <>
+//       <h1>Welcome to React</h1>
+//       <button onClick={() => dispatch("Increment")}>Increment</button>
+//       <h1>Count: {count}</h1>
+//       <button onClick={() => dispatch("Decrement")}>Decrement</button>
+//     </>
+//   );
+// };
+
+// export default App;
+//=========================================================================
+
+
+// import { useReducer } from "react";
+// const App=()=>{
+//     const myReducer=(state,action)=>{
+//         switch(action)
+//         {
+//             case "RED":
+//                 return state="RED";
+//                 case "GREEN":
+//                     return state="GREEN";
+//                     case "BLUE":
+//                     return state="";
+//         }
+//     }
+// }
+
+// USEDMEMO:==  is used to increase the performace of the FUNCTION
+//expensive performnace jo render hone k liye bachaya jata hai
+
+// import { useState, useMemo } from "react";
+// const App=()=>{
+//     const [add,setAdd]=useState(0);
+//     const [sub,setSub]=useState(100);
+//     const myMulti=useMemo(()=>{
+//         console.log("******");
+//         return add*2;
+//     },[add]);
+//     return(
+//         <>
+//         <h1>Welcome to USEDMEMO hook</h1>
+//         <h1>Multiplication: {myMulti}</h1>
+//         <button onClick={()=>{setAdd(add+1)}}>Increment</button>
+//        <h3>Decrement:{add}</h3>
+//        <button onClick={()=>{setSub(add+1)}}>Decrement</button>
+//        <h3>Decrement:{sub}</h3>
+//         </>
+//     )
+
+// }
+// export default App;
+
+//=================================REDUX TOOLKIT=========================================================
+// import { useSelector,useDispatch } from "react-redux";
+// import { increment,decrement } from "./counterSlice";
+// const App=()=>{
+//     const mydata=useSelector(state=>state.mycounter.count);
+//     const dispatch = useDispatch();
+//     return(
+//         <>
+//         <h1>welcome</h1>
+//         <button onClick={()=>{dispatch(increment())}}>increment</button>
+//         <h1>{mydata}</h1>
+//         <button onClick={()=>{dispatch(decrement())}}>decrement</button>
+//         </>
+//     )
+// }
+// export default App;
+
+//=====================================29/4/25=====================
+import { useSelector ,useDispatch} from "react-redux";
+import { changeName } from "./nameSlice";
+const App=()=>{
+    const usrname= useSelector(state=>state.myname.user)
+    const dispatch=useDispatch();
+    return(
+        <>
+        <h1>welcome :{usrname}</h1>
+        <button onClick={()=>{dispatch(changeName())}}>change name</button>
+        </>
+    )
+}
+export default App;
+
+
+
+
+
+
+
+
+
